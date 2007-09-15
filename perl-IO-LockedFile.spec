@@ -1,7 +1,7 @@
 %define realname IO-LockedFile
 %define name	perl-%{realname}
 %define version	0.23
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Supply object methods for locking files
 Name:		%{name}
