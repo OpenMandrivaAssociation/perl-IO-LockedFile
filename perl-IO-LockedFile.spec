@@ -11,7 +11,6 @@ License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
 Source:		%{realname}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-root
 BuildArch:	noarch
 
 %description
