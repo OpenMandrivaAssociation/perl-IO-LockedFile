@@ -8,7 +8,7 @@ Release:	4
 Summary:	Supply object methods for locking files
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
