@@ -2,14 +2,14 @@
 %define upstream_version 0.23
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Supply object methods for locking files
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/IO-LockedFile
+Source0:	https://cpan.metacpan.org/authors/id/R/RA/RANI/IO-LockedFile-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
