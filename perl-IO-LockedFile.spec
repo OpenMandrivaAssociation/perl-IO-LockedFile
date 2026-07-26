@@ -1,15 +1,13 @@
 %define upstream_name    IO-LockedFile
-%define upstream_version 0.23
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.23
+Release:	6
 
 Summary:	Supply object methods for locking files
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/IO-LockedFile
-Source0:	https://cpan.metacpan.org/authors/id/R/RA/RANI/IO-LockedFile-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RA/RANI/IO-LockedFile-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ the IO::File class with the unique difference that the files we deal with are
 locked using the Flock mechanism (using the flock function).
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -42,9 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 0.230.0-1mdv2010.0
 + Revision: 407786
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.23-4mdv2009.0
+- rebuild using %0.23 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.23-4mdv2009.0
 + Revision: 257315
 - rebuild
 
